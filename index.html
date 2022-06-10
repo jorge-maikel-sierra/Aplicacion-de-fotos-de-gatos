@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplicación Foto De Gato</title>
+</head>
+<body>
+    <h1>Aplicación Foto De Gato</h1>
+    <main>
+        <section>
+            <h2>Foto de Gato</h2>
+            <!-- TODO: Add link to cat photos -->
+            <p>Haga clic aquí para ver más <a target="_blank" href="https://freecatphotoapp.com">Foto de Gato</a>.</p>
+            <a href="https://freecatphotoapp.com"><img
+                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="Un lindo gato naranja acostado boca arriba."></a>
+        </section>
+        <section>
+            <h2>Listas de gatos</h2>
+            <h3>Cosas que les encantan a los gatos:</h3>
+            <ul>
+                <li>pellizco de gato</li>
+                <li>punteros láser</li>
+                <li>lasagna</li>
+            </ul>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="Una rebanada de lasaña en un plato.">
+                <figcaption>Gatos <em>amor</em> lasagna.</figcaption>
+            </figure>
+            <h3>Las 3 cosas principales que los gatos odian:</h3>
+            <ol>
+                <li>tratamiento de pulgas</li>
+                <li>trueno</li>
+                <li>otros gatos</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Cinco gatos mirando alrededor de un campo.">
+                <figcaption>Gatos <strong>odian</strong> otros gatos</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>forma de gato</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <fieldset>
+                    <legend>¿Tu gato es un gato de interior o de exterior?</legend>
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>¿Cuál es la personalidad de tu gato?</legend>
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked> <label
+                        for="loving">Cariñoso</label>
+                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Perezoso</label>
+                    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
+                        for="energetic">Energético</label>
+                </fieldset>
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            No Copyright - <a href="https://pizzeriahorebs.com">Pizzeria Horebs</a>
+        </p>
+    </footer>
+</body>
+
+</html>
